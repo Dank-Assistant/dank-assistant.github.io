@@ -1,0 +1,284 @@
+<html>
+<head>
+<title>Dank Assistant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="title" content="Dank Assistant | Thanks for inviting Dank Assistant!">
+<meta name="description" content="Command reminders, Dank Memer guides, calculators, heist starter, gambling tracker & tons of tools to run a Dank Memer server.">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dankassistant.ga/landing">
+<meta property="og:title" content="Dank Assistant | Thanks for inviting Dank Assistant!">
+<meta property="og:description" content="Command reminders, Dank Memer guides, calculators, heist starter, gambling tracker & tons of tools to run a Dank Memer server.">
+<meta property="og:image" content="banner.JPG">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="theme-color" content="#509624" />
+
+<meta property="twitter:card" content="banner.JPG">
+<meta property="twitter:url" content="https://dankassistant.ga/landing">
+<meta property="twitter:title" content="Dank Assistant | Thanks for inviting Dank Assistant!">
+<meta property="twitter:description" content="Command reminders, Dank Memer guides, calculators, heist starter, gambling tracker & tons of tools to run a Dank Memer server.">
+<meta property="twitter:image" content="banner.JPG">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<style>
+  body {
+    font-family: system-ui;
+    /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;*/
+    text-decoration: none !important;
+  }
+  h1 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 50px;
+    text-align: center;
+  }
+    h2 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 30px;
+    text-align: center;
+  }
+	
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #5865f2;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  }
+	
+code {
+  font-family: Consolas,"courier new";
+  color: #ffffff;
+  background-color: #36393e;
+  padding: 2px;
+}
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #5865f2;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.check {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 5px auto;
+  box-shadow: inset 0px 0px 0px #5865f2;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.check__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #5865f2;
+  }
+}
+	
+.crossmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #5865f2;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+.crossmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 5px auto;
+  box-shadow: inset 0px 0px 0px #5865f2;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+.crossmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 29;
+  stroke-dashoffset: 29;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #5865f2;
+  }
+}
+</style>
+<body>
+	<div id="result">
+	<svg class="check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="check__circle" cx="26" cy="26" r="25" fill="none" /><path class="check__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" /></svg>
+	</div>
+  <h1 id="errorh1">THANK YOU</h1>
+  <h2 id="msg"></h2>
+  <p id="wrongperms" style="text-align: center;"></p>
+	<p style="font-size: 22px;">Here's something you can do:</p>
+  <label class="container">Invite Dank Assistant
+  <input type="checkbox" checked="checked" onclick="return false;">
+  <span class="checkmark"></span>
+</label>
+  <label class="container">Check out our commands with <code>d!help</code>
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+  <label class="container">Configurate Dank Assistant in your server with <code>d!config</code>
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+  <label class="container">Join our <a href="https://discord.gg/danks" target="_blank">support server</a>
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+  <label class="container">Vote us on <a href="https://top.gg/bot/815564870011453480/vote" target="_blank">top.gg</a>
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+  <label class="container">Check out our <a href="https://www.patreon.com/join/DankAssistantBot" target="_blank">Patreon</a>
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+  <label class="container">Follow us on <a href="https://twitter.com/DankAssistant" target="_blank">Twitter</a>
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+  <script>
+		const queryString = new URLSearchParams(window.location.search);
+		const error = queryString.get('error');
+		const code = queryString.get('code');
+		const perms = queryString.get('permissions')
+		if (error) {
+      document.getElementById('errorh1').innerHTML = `There's an error while inivting Dank Assistant`
+      document.getElementById('result').innerHTML = `<svg class="crossmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="crossmark__circle" cx="26" cy="26" r="25" fill="none" /><path class="crossmark__check" fill="none" d="M16 16 36 36 M36 16 16 36" /></svg>`
+      document.getElementById('msg').innerHTML = `You have cancelled the invite process. If it was a mistake, you can invite it again by clicking <a href="https://discord.com/oauth2/authorize?client_id=815564870011453480&scope=bot%20applications.commands&permissions=347200&response_type=code&redirect_uri=https%3A%2F%2Fdankassistant.ga%2Fthanks">here.</a>`
+		}
+		else {
+			if (code) {
+				if (perms !== "347200") {
+					document.getElementById('msg').innerHTML = `Dank Assistant has been added into your server, but minimal permissions are not given.<br> <a href="https://discord.com/oauth2/authorize?client_id=815564870011453480&scope=bot%20applications.commands&permissions=347200&response_type=code&redirect_uri=https%3A%2F%2Fdankassistant.ga%2Fthanks">Invite again.</a></div>`
+				} else {
+		document.getElementById('msg').innerHTML = `Dank Assistant has been added into your server.`
+				}
+      }
+		}
+	//document.getElementById('msg').innerHTML = `Thank you for checking out the landing page. What are you waiting for? <a href="https://discord.com/oauth2/authorize?client_id=815564870011453480&scope=bot%20applications.commands&permissions=347200&response_type=code&redirect_uri=https%3A%2F%2Fdankassistant.ga%2Fthanks">invite now!</a>`
+	</script>
+</body>
+</html>
