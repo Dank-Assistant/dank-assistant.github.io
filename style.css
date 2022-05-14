@@ -141,13 +141,13 @@ body, html {
 .section-img-container {
   padding: 5rem;
   flex-direction: column;
-  width: 50%;
+  width: 75%;
   text-align: center;
 }
 
 .section-img {
   border-radius: 15px;
-  width: 80%;
+  width: 75%;
   max-width: 30rem;
 }
 
@@ -181,7 +181,7 @@ body, html {
     text-align: center;
     margin-bottom: 5rem;
     margin-left: 5rem;
-    width: 50%;
+    width: 60%;
   }
   .section-content {
     width: 75%;
